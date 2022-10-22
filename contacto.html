@@ -38,17 +38,40 @@
     </header>
 
     <main class="container">
-        <h3 class="center-text">Sobre Nosotros</h3>
+        <h3 class="center-text">Contacto</h3>
 
-        <div class="about-us">
-            <div class="about-us__image">
-                <img src="./img/nosotros.jpg" alt="imagen nosotros">
+        <div class="contact-bg"></div>
+
+        <form class="form">
+            <div class="field">
+                <label class="field__label" for="name">Nombre</label>
+                <input 
+                    class="field__input"
+                    type="text" 
+                    placeholder="Tu nombre" 
+                    id="name"
+                >
             </div>
-            <div class="about-us__text">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi nam magni dolore, a est quidem. Harum consectetur, voluptatum, quam accusantium aspernatur recusandae quibusdam nam, magnam deserunt odio facere repellat ratione.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae quisquam eaque, ad impedit iste voluptate nulla ex cum omnis in quis nam odio obcaecati modi est perspiciatis minus consectetur?</p>
+            <div class="field">
+                <label class="field__label" for="email">E-mail</label>
+                <input 
+                    class="field__input"
+                    type="email" 
+                    placeholder="Tu E-mail" 
+                    id="email"
+                >
             </div>
-        </div>
+            <div class="field">
+                <label class="field__label" for="message">Mensaje</label>
+                <textarea 
+                    class="field__input field__input--text-area"
+                    id="message"
+                ></textarea>
+            </div>
+            <div class="field">
+                <input type="submit" value="Enviar" class="button primary--button">
+            </div>
+        </form>
     </main>
 
     <footer class="footer">
