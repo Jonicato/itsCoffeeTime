@@ -7,6 +7,9 @@
     <title>It's Coffee Time!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="index.html" as="document">
     
     <!-- Preload -->
     <link rel="preload" href="./css/normalize.css" as="style">
@@ -40,7 +43,10 @@
     <main class="container">
         <h3 class="center-text">Tipos de Grano de Café</h3>
 
-        <img src="./img/blog1.jpg" alt="">
+        <picture>
+            <source srcset="./img/blog1.webp" type="image/webp">
+            <img loading="lazy" src="./img/blog1.jpg" alt="">
+        </picture>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae orci luctus elit lacinia consequat vitae ut sem. Morbi non nulla et justo tincidunt tempor gravida ut leo. Duis rhoncus faucibus blandit. Integer ac semper lectus. Integer laoreet semper dui tincidunt sagittis. Nunc eget sapien ullamcorper, auctor lacus ac, congue risus. Etiam lacinia, metus finibus dignissim posuere, neque mauris suscipit felis, eget semper arcu sem et massa. Vestibulum leo sapien, blandit eget vulputate at, ornare ac ligula. In hac habitasse platea dictumst. Etiam laoreet, massa ut tempus egestas, massa ipsum viverra massa, eget pharetra tortor purus quis mauris. In laoreet dui non felis venenatis, sit amet convallis erat mollis. Suspendisse sed consectetur augue. Etiam ut nibh ut purus rutrum tincidunt. Quisque iaculis elit et orci ultrices dictum.
         </p>
@@ -70,5 +76,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modernizr.js"></script>
 </body>
 </html>

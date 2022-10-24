@@ -7,6 +7,9 @@
     <title>It's Coffee Time!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="index.html" as="document">
     
     <!-- Preload -->
     <link rel="preload" href="./css/normalize.css" as="style">
@@ -42,7 +45,7 @@
 
         <div class="about-us">
             <div class="about-us__image">
-                <img src="./img/nosotros.jpg" alt="imagen nosotros">
+                <img loading="lazy" src="./img/nosotros.jpg" alt="imagen nosotros">
             </div>
             <div class="about-us__text">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi nam magni dolore, a est quidem. Harum consectetur, voluptatum, quam accusantium aspernatur recusandae quibusdam nam, magnam deserunt odio facere repellat ratione.</p>
@@ -66,5 +69,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modernizr.js"></script>
 </body>
 </html>
